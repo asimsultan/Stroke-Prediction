@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+body{
+background-color: #2C173E;
+}
+
+input[type=number], select {
+  width: 100%;
+  padding: 10px 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 16px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left:35%;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  margin-left:20%;
+  margin-right:20%;
+  border-radius: 10px;
+  width: 60%;
+  background-color: #E1CEF1;
+  padding: 10px;
+}
+
+#top_title{
+text-align:center;
+color: #fff;
+}
+
+</style>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stroke Prediction</title>
+</head>
+<body>
+
+<h2 id="top_title">Prediction of Stroke Diseases using the following input Criteria</h2>
+
+<div>
+  <form method="POST">
+
+    <label>Gender</label>
+    <select name="gender">
+      <option value="0">Male</option>
+      <option value="1">Female</option>
+    </select>
+
+    <label>Age</label>
+    <input type="number" name="age" placeholder="Enter the age" max="110">
+
+    <label>Do you suffer Hypertension</label>
+    <select name="hypertension">
+      <option value=0>No</option>
+      <option value=1>Yes</option>
+    </select>
+
+    <label>Any Heart Disease</label>
+    <select name="heartdisease">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select>
+
+    <label>Ever Married</label>
+    <select name="married">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select>
+
+    <label>Work Type</label>
+    <select name="worktype">
+      <option value="1">Children</option>
+      <option value="2">Government Job</option>
+      <option value="3">Private</option>
+      <option value="4">Self Employed</option>
+      <option value="5">Never Worked</option>
+    </select>
+
+    <label>Residence Type</label>
+    <select name="residence">
+      <option value="0">Rural</option>
+      <option value="1">Urban</option>
+    </select>
+
+    <label>Average Glucose level (In blood)</label>
+    <input type="number" name="glucoselevel" placeholder="Enter the Glucose Level" max="250">
+
+    <label >Body Mass Index (BMI)</label>
+    <input type="number" name="bmi" placeholder="Enter the BMI" max="50">
+
+    <label>Smoking Status</label>
+    <select name="smoking">
+      <option value="0">Never smoked</option>
+      <option value="1">Formerly smoked</option>
+      <option value="2">Smokes</option>
+      <option value="3">Unknown</option>
+    </select>
+
+    <input type="submit" value="Submit">
+
+  <br>
+  <label>{{result}}</label>
+  </form>
+
+</div>
+
+</body>
+</html>
