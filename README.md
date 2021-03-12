@@ -8,3 +8,6 @@ In the given notebook file, I have done some data manipulation since the dataset
 
 The app has been deployed using Flask and Heroku.
 The live demo of the project is here: 
+
+
+https://strokepredictioninpatients.herokuapp.com/
